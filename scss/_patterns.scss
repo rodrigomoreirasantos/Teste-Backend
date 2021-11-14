@@ -1,0 +1,36 @@
+.form-layout{
+    width: 32rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);;
+    height: 41rem;
+    border-radius: 4px;
+    .close{
+        @include flex(row,center,flex-end);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        max-width: 96%;
+        margin-top: 8px;
+    }
+    form{
+        @include flex(column, center, center);
+        .title{
+            width: 100%;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-action-form{
+            @include flex(row,center,center);
+            margin-top: 16px;
+            font-size: 1.3rem;
+            color: $white-colors;
+            background-color: $red-button-colors;
+            height: 100%;
+        }
+    }
+
+
+}

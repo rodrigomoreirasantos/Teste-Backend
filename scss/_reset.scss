@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+html{
+    font-size: 62.5%;
+    @include responsive(1300px){
+        font-size: 58%;
+    }
+    @include responsive(991px){
+        font-size: 62.5%;
+    }
+}
+
+html,
+body{
+    overflow-x: hidden;
+    //overflow-y: hidden;
+    height: 100%;
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+input, #tipo_movimentacao{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 24rem;
+    padding: 8px;
+    border-radius: 4px;   
+}
+input{
+    height: 3.2rem;
+}
+
+#tipo_movimentacao{
+    height: 3.5rem;
+}
